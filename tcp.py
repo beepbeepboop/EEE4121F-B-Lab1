@@ -78,8 +78,9 @@ class TCPTopo(Topo):
     "Simple topology for TCP experiment."
 
     def build(self, n=2):
-        # TODO: create two hosts
-        
+        # Complete: create two hosts
+        h1 = self.addHost('h1')
+	h2 = self.addHost('h2')
         # Here I have created a switch.  If you change its name, its
         # interface names will change from s0-eth1 to newname-eth1.
         switch = self.addSwitch('s0')
